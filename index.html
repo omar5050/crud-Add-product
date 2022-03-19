@@ -1,0 +1,58 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Crud project</title>
+</head>
+<body>
+    
+<!-- take input from user -->
+
+<div class=" py-3 w-75 mx-auto">
+    <label for="productName">productName: </label>
+    <input type="text" id="productName" class="form-control my-2">
+
+    <label for="productPrice">productPrice: </label>
+    <input type="number" id="productPrice" class="form-control my-2">
+
+    <label for="productCategory">productCategory: </label>
+    <input type="text" id="productCategory" class="form-control my-2">
+
+    <label for="productDes">productDes: </label>
+    <textarea  id="productDes" class="form-control"></textarea>
+
+    <button id="mainBtn" class="btn btn-primary w-100 my-2" >Add products</button>
+    <button id="cancel" class="btn btn-success w-100 my-2" onclick="clearForm()" >cancel</button>
+
+</div>
+
+<div class="w-75 mx-auto py-3">
+    <label for="">Search</label>
+    <input type="search" class="form-control my-2" id="searchBtn" >
+</div>
+
+<div class="w-75  mx-auto">
+   
+    <table class="table">
+        <thead>
+            <th>Index</th>
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th>productDes</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        
+        <tbody id="rowTable">
+           
+        </tbody>
+    </table>
+</div>
+
+<!-- <button id="btn1" class="btn btn-info">Hello</button>
+<button id="change" onclick="chnage()">Change</button> -->
+
+<script src="main.js"></script>
+</body>
+</html>
